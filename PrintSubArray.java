@@ -2,6 +2,7 @@ public class PrintSubArray
 {
     public static void printSubArray(int num[])
     {
+        int ts=0; // total subarrays
         for(int i =0; i<num.length; i++)
         {   //starting index, starting with 0 that is 2 
             int start = i;
@@ -12,10 +13,12 @@ public class PrintSubArray
                 {
                     System.out.print(num[k]+" ");
                 }
+                ts++;
                 System.out.println();
             }
             System.out.println();
         }
+        System.out.println("Total subarrays = "+ts);        
     }
     public static void main(String[] args) 
     {
